@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+}
+:root {
+	--black: #3C3C3C;
+	--green: #5EAC74;
+	--red: #FF5A5F;
+	--white: #F5F5F5;
+	--yellow: #FFD23F;
+}
+.container {
+	position: relative;
+	display: inline-block;
+}
+.info {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+}
+
+.healthbar-container {
+	background-color: var(--yellow);
+	height: 30px;
+}
+.healthbar-container {
+	position: relative;
+	height: 30px;
+	width: 100%;
+}
+.healthbar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--red);
+}
+.player.healthbar {
+	left: initial;
+}
+.timer {
+	background-color: var(--red);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	height: 100px;
+	width: 100px;
+}
+
+.winner {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.winner.text {
+	font-size: 75px;
+	text-shadow: var(--red) 5px 5px;
+}
+.text {
+	color: var(--white);
+	font-size: 32px;
+	font-family: 'Kablammo', cursive;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}

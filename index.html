@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Canvas Game</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="info">
+
+			<div class="player healthbar-container">
+				<div class="player capacity"></div>
+				<div id="playerHealth" class="player healthbar"></div>
+			</div>
+
+			<div id="timer" class="text timer">
+				10
+			</div>
+
+			<div class="enemy healthbar-container">
+				<div class="enemy capacity"></div>
+				<div id="enemyHealth" class="enemy healthbar"></div>
+			</div>
+
+		</div>
+		<div id="displayText" class="winner text">
+			Tie
+		</div>
+		<canvas></canvas>
+		<!-- https://www.youtube.com/watch?v=vyqbNFMDRGQ 2:58 -->
+	</div>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript" src="js/classes.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
